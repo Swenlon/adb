@@ -1,4 +1,4 @@
-project(adb)
+project(adb-fastboot)
 cmake_minimum_required(VERSION 3.14.2)
 
 # enable languages
@@ -20,9 +20,6 @@ add_compile_definitions(_FILE_OFFSET_BITS=64)
 
 # sources
 set(SRC ${PROJECT_SOURCE_DIR}/src)
-
-# includes
-include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 # building
 add_subdirectory(src/fmtlib EXCLUDE_FROM_ALL)

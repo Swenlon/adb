@@ -31,4 +31,3 @@ include(libz.cmake)
 
 # tools
 include(adb.cmake)
-include(fastboot.cmake)

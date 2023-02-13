@@ -1,5 +1,5 @@
-# adb-fastboot
+# adb
 
-[![build workflow](https://github.com/RohitVerma882/adb-fastboot/actions/workflows/build.yml/badge.svg)](https://github.com/RohitVerma882/adb-fastboot/actions/workflows/build.yml)
+[![build workflow](https://github.com/RohitVerma882/adb/actions/workflows/build.yml/badge.svg)](https://github.com/RohitVerma882/adb/actions/workflows/build.yml)
 
-adb and fastboot build workflow for Android
+Build adb binary for Android

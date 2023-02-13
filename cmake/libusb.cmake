@@ -1,19 +1,19 @@
 add_library(libusb STATIC
-    ${SRC}/libusb/libusb/core.c
-    ${SRC}/libusb/libusb/descriptor.c
-    ${SRC}/libusb/libusb/hotplug.c
-    ${SRC}/libusb/libusb/io.c
-    ${SRC}/libusb/libusb/sync.c
-    ${SRC}/libusb/libusb/strerror.c
-    ${SRC}/libusb/libusb/os/linux_usbfs.c
-    ${SRC}/libusb/libusb/os/events_posix.c
-    ${SRC}/libusb/libusb/os/threads_posix.c
-    ${SRC}/libusb/libusb/os/linux_netlink.c)
+    ${AOSP}/libusb/libusb/core.c
+    ${AOSP}/libusb/libusb/descriptor.c
+    ${AOSP}/libusb/libusb/hotplug.c
+    ${AOSP}/libusb/libusb/io.c
+    ${AOSP}/libusb/libusb/sync.c
+    ${AOSP}/libusb/libusb/strerror.c
+    ${AOSP}/libusb/libusb/os/linux_usbfs.c
+    ${AOSP}/libusb/libusb/os/events_posix.c
+    ${AOSP}/libusb/libusb/os/threads_posix.c
+    ${AOSP}/libusb/libusb/os/linux_netlink.c)
     
 target_include_directories(libusb PRIVATE
-    ${SRC}/libusb/libusb
-    ${SRC}/libusb/libusb/os
-    ${SRC}/libusb/android)
+    ${AOSP}/libusb/libusb
+    ${AOSP}/libusb/libusb/os
+    ${AOSP}/libusb/android)
     
 target_compile_options(libusb PRIVATE
     -fvisibility=hidden 

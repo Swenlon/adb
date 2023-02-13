@@ -1,11 +1,11 @@
 add_library(liblog STATIC
-    ${SRC}/liblog/log_event_list.cpp
-    ${SRC}/liblog/log_event_write.cpp
-    ${SRC}/liblog/logger_name.cpp
-    ${SRC}/liblog/logger_read.cpp
-    ${SRC}/liblog/logger_write.cpp
-    ${SRC}/liblog/properties.cpp
-    ${SRC}/liblog/logprint.cpp)
+    ${AOSP}/liblog/log_event_list.cpp
+    ${AOSP}/liblog/log_event_write.cpp
+    ${AOSP}/liblog/logger_name.cpp
+    ${AOSP}/liblog/logger_read.cpp
+    ${AOSP}/liblog/logger_write.cpp
+    ${AOSP}/liblog/properties.cpp
+    ${AOSP}/liblog/logprint.cpp)
 
 target_compile_definitions(liblog PRIVATE
     -DLIBLOG_LOG_TAG=1006 
@@ -13,8 +13,8 @@ target_compile_definitions(liblog PRIVATE
     -DFAKE_LOG_DEVICE=1)
     
 target_include_directories(liblog PUBLIC
-    ${SRC}/libcutils/include
-    ${SRC}/libutils/include 
-    ${SRC}/libsystem/include
-    ${SRC}/liblog/include
-    ${SRC}/libbase/include)
+    ${AOSP}/libcutils/include
+    ${AOSP}/libutils/include 
+    ${AOSP}/libsystem/include
+    ${AOSP}/liblog/include
+    ${AOSP}/libbase/include)
